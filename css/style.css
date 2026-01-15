@@ -33,3 +33,36 @@ body{
     background-color: #202024;
     border: solid 2px #252529;
 }
+
+/*Bloco de notícias*/
+
+#card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.noticia1{ /*Adicionar class de outras divs*/
+    cursor: pointer;  
+}
+
+.noticia1{
+    max-width: 900px;
+    font-family: "Space Grotesk";
+    background-color: #17171A;
+    padding: 40px;
+    margin-top: 20px;
+    border: solid #252529 1px;
+}
+
+.noticia1 h5{
+    color: #E07B67;
+}
+
+.noticia1 h4{
+    color: #FFFFFF;
+}
+
+.noticia1 p{
+    color: #AFABB6
+}
