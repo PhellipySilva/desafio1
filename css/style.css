@@ -28,10 +28,19 @@ body{
 
 #pesquisa{
     margin-top: 6px;
-    padding: 10px 95px 10px 95px;
+    color: #AFABB6;
+    padding: 10px 0px 10px 10px;
+    width: 50%;
     justify-content: center;
     background-color: #202024;
     border: solid 2px #252529;
+    outline: none;
+    text-align: left;
+}
+
+#pesquisa:hover{
+    border: solid 2px #E07B67;
+    transition: 0.5s;
 }
 
 /*Bloco de notícias*/
@@ -42,27 +51,33 @@ body{
     align-items: center;
 }
 
-.noticia1{ /*Adicionar class de outras divs*/
+.noticia1, .noticia2, .noticia3{ /*Adicionar class de outras divs*/
     cursor: pointer;  
+    border-radius: 5px;
 }
 
-.noticia1{
+.noticia1, .noticia2, .noticia3{
     max-width: 900px;
     font-family: "Space Grotesk";
     background-color: #17171A;
-    padding: 40px;
+    padding: 25px;
     margin-top: 20px;
     border: solid #252529 1px;
 }
 
-.noticia1 h5{
+.noticia1:hover,.noticia2:hover,.noticia3:hover{
+    border: solid #E07B67 1px;
+    transition: 0.5s;
+}
+
+.noticia1 h5, .noticia2 h5, .noticia3 h5{
     color: #E07B67;
 }
 
-.noticia1 h4{
+.noticia1 h4, .noticia2 h4, .noticia3 h4{
     color: #FFFFFF;
 }
 
-.noticia1 p{
+.noticia1 p, .noticia2 p, .noticia3 p{
     color: #AFABB6
 }
