@@ -3,6 +3,7 @@
 body{
     background-color: #121214;
     margin: 0 auto;
+    margin-bottom: 20px;
 }
 
 /*Parte de cima do site*/
@@ -51,6 +52,27 @@ body{
     align-items: center;
 }
 
+/*Coração*/
+
+.heart{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#icon {
+  fill: #17171A;
+  stroke: #E07B67;
+  stroke-width: 7;
+  transition: fill 0.3s;
+  cursor: pointer;
+}
+
+#icon.filled,
+#icon:hover {
+  fill: #E07B67;
+}
+
+
 .noticia1, .noticia2, .noticia3{ /*Adicionar class de outras divs*/
     cursor: pointer;  
     border-radius: 5px;
@@ -60,7 +82,7 @@ body{
     max-width: 900px;
     font-family: "Space Grotesk";
     background-color: #17171A;
-    padding: 25px;
+    padding: 20px;
     margin-top: 20px;
     border: solid #252529 1px;
 }
@@ -80,4 +102,18 @@ body{
 
 .noticia1 p, .noticia2 p, .noticia3 p{
     color: #AFABB6
+}
+
+
+/*Responsividade*/
+
+@media screen and (max-width: 728px) {
+    section{
+        padding: 20px;
+    }
+
+    .busca{
+        display: flex;
+        justify-content: center;
+    }
 }
